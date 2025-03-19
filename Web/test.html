@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project MW</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <style>
+        /* Page Fade-in Effect */
+        body {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        body.loaded {
+            opacity: 1;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .dropdown-menu {
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        @media (min-width: 992px) {
+            .nav-item:hover .dropdown-menu {
+                display: block;
+            }
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-color: #f8fafc;
+            text-align: center;
+            padding: 20px;
+        }
+        .header img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .feature-box {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            transition: box-shadow 0.3s;
+        }
+        .feature-box:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .feature-box img {
+            max-width: 100px;
+            margin-right: 15px;
+            border-radius: 8px;
+        }
+
+        /* Models Section */
+        .models {
+            background-color: #f8fafc;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .models img {
+            transition: transform 0.3s;
+        }
+        .models img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f8fafc;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Project MW</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">AI Model</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Model 1</a></li>
+                            <li><a class="dropdown-item" href="#">Model 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-dark rounded-pill mx-2" href="#">Register</a>
+                <a class="btn btn-outline-dark rounded-pill" href="#">Sign In</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div>
+            <h1 class="fw-bold">Welcome To Our Website</h1>
+            <p class="fs-4">This Is The Way!</p>
+            <a class="btn btn-dark" href="#">Get Started</a>
+        </div>
+        <img src="https://via.placeholder.com/500" alt="Header Image">
+    </div>
+
+    <div class="features">
+        <div class="container">
+            <h2 class="fw-bold">Features of AI Model</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <img src="https://via.placeholder.com/100" alt="Feature 1">
+                        <p>Feature 1 Description</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="feature-box">
+                        <img src="https://via.placeholder.com/100" alt="Feature 2">
+                        <p>Feature 2 Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="models">
+        <div class="container">
+            <h2>Our Own AI Models</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Model 1">
+                        <p>Model 1</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="image-container">
+                        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Model 2">
+                        <p>Model 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2024 SVD, All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function () {
+            document.body.classList.add('loaded');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

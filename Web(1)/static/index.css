@@ -1,0 +1,130 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 100hw;
+    height: 50vh;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.nav-item:hover > .dropdown-menu {
+    display: block;
+}
+
+.nav-item:hover {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover-zoom {
+    transition: transform 0.4s ease-in-out;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1) ;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8fafc;
+    padding: 0 50px;
+}
+
+.header img {
+    height: 500px;
+    width: auto;
+    margin-left: 20px;
+    border-radius: 6px;
+}
+
+.features {
+    margin: 5rem 0;
+    padding: 2rem;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+.image-text-container:hover {
+    box-shadow: 0 4px 20px;
+}
+
+.image-text-container img {
+    max-height: 150px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.text-content {
+    margin-left: 15px;
+}
+
+.models {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    background-color: #f8fafc;
+}
+
+.image-container {
+    perspective: 1000px;
+}
+
+.img-fluid {
+    transition: transform 0.4s ease-in-out;
+}
+
+/*
+.image-container:hover .image-1 {
+    transform: rotateY(20deg);
+}
+
+.image-container:hover .image-2 {
+    transform: rotateY(20deg);
+}
+
+.image-container:hover .image-3 {
+    transform: rotateY(-20deg);
+}
+*/
+.footer {
+    background-color: #f8fafc;
+}
+
+.img-fuild {
+    transition: transform 0.5s ease;
+    width: 100%;
+    height: auto;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
